@@ -2,13 +2,15 @@
 		<body>
 			<table border=1>
 				<tr>
-					<td>1</td>
-					<td>Livro</td>
+					<td>ID</td>
+					<td>Pais</td>
 				</tr>
-				<tr>
-					<td>2</td>
-					<td>Teste</td>
-				</tr>
+				<%for(var i=0; i < lista.length; i++) {%>
+					<tr>
+						<td><%=lista[i].id%></td>
+						<td><%=lista[i].name_pt_br%></td>
+					</tr>
+				<%}%>	
 			</table>
 		</body>
 </html>
